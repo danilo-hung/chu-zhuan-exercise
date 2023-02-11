@@ -19,3 +19,33 @@
     background-size: cover;
     background-position: 65% 0;
 }
+/* intro */
+.intro-section{
+    max-width: 1000px;
+}
+.btn.btn-pink{
+    width: 225.31px;
+    background-color: #F88A8A;
+    box-shadow: 0px 3px 10px #772405;
+    border-radius: 18px;
+    color: white;
+}
+.btn.btn-pink:active{
+    border-color: #F88A8A;
+    color: #F88A8A;
+}
+/* carousel */
+.carousel-indicators [data-bs-target] {
+    margin: 0 5px;
+    height: 9px;
+    width: 9px;
+    border-radius: 100%;
+    background-color: #A7A0A0;
+    position: relative;
+    top: 50px;
+    border: none;
+}
+
+.carousel-indicators>li.active {
+    background: #FFB03A;
+}
