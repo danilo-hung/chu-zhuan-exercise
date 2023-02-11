@@ -244,3 +244,28 @@ h3:after {
         font-size: 18px;
     }
 }
+
+/* footer */
+.company-footer{
+    background-color: #F8E8D5;
+}
+.company-footer p {
+    color: #AD7B43;
+    font-size: 12px;
+}
+.copyright-footer{
+    background-color: #EDD2B3;
+}
+.copyright-footer p {
+    color: #AD7B43;
+    font-size: 12px;
+}
+
+@media (min-width:992px) {
+    .company-footer p {
+        font-size: 16px;
+    }
+    .copyright-footer p {
+        font-size: 16px;
+    }
+}
