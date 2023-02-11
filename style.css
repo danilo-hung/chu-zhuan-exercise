@@ -1,39 +1,46 @@
 /* import font */
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+
 /* BootStrap Root */
-:root{
-    --bs-font-sans-serif: "Noto Sans",system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",  "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+:root {
+    --bs-danger-rgb: 255, 0, 0;
+    --bs-warning-rgb: 191, 5, 5;
+    --bs-font-sans-serif: "Noto Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 
 /* body */
 
-.body-background-img{
+.body-background-img {
     background-image: url(./img/Mask\ Group\ 20.png);
 }
 
 /* header */
-.header-background-img{
+.header-background-img {
     height: 340px;
     background-image: url(./img/網頁刊頭-無字.png);
     background-size: cover;
     background-position: 65% 0;
 }
+
 /* intro */
-.intro-section{
+.intro-section {
     max-width: 1000px;
 }
-.btn.btn-pink{
+
+.btn.btn-pink {
     width: 225.31px;
     background-color: #F88A8A;
     box-shadow: 0px 3px 10px #772405;
     border-radius: 18px;
     color: white;
 }
-.btn.btn-pink:active{
+
+.btn.btn-pink:active {
     border-color: #F88A8A;
     color: #F88A8A;
 }
+
 /* carousel */
 .carousel-indicators [data-bs-target] {
     margin: 0 5px;
@@ -48,4 +55,156 @@
 
 .carousel-indicators>li.active {
     background: #FFB03A;
+}
+
+/* process */
+.process-section {
+    margin-top: 50px;
+    max-width: 1000px;
+}
+
+h3 {
+    font-size: 23px;
+    font-weight: bold;
+    color: #CC6D00;
+    text-align: center;
+}
+
+h3::before,
+h3::after {
+    background-color: #CC6D00;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 35%
+}
+
+h3:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+h3:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+@media (min-width:992px) {
+    h3{
+        font-size: 30px;
+    }
+    h3::before,
+    h3::after {
+        width: 45%
+    }
+}
+
+.process-section .content-box{
+    background-color: white;
+    min-height: 124px;
+    border-radius: 20px;
+}
+
+.process-section article p,
+.process-section article ol li {
+    font-size: 15px;
+}
+.process-section footer p {
+    font-size: 10px;
+}
+
+.process-section .img-box {
+    width: 100%;
+    height: 0;
+    padding-bottom: 80%;
+    background-image: url(./img/Group\ 1521.png), url(./img/Group\ 1520.png), url(./img/Group\ 1516.png);
+    background-size: 70%, 30%, 100%;
+    background-position: 100% 60%, 10% 50%, 0% 90%;
+    background-repeat: no-repeat;
+}
+
+.process-section .ad-slogan{
+    margin-bottom: 0;
+    max-width: auto;
+    margin-right: 0;
+    font-size: 20px;
+    color: #2FAFAE;
+    font-weight: bold;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.process-section .ad-text{
+    max-width: auto;
+    font-size: 10px;
+    color: #47270680;
+    text-shadow: 1px 1px 0px #ffffff;
+    font-weight: bold;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+@media (min-width:768px) {
+    .process-section .ad-slogan{
+        max-width: auto;
+        margin-right: 0;
+        font-size: 30px;
+        color: #2FAFAE;
+        font-weight: bold;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    .process-section .ad-text{
+        max-width: auto;
+        font-size: 20px;
+        color: #47270680;
+        text-shadow: 1px 1px 0px #ffffff;
+        font-weight: bold;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+}
+
+@media (min-width:992px) {
+    .process-section .img-box {
+        padding-bottom: auto;
+        background-size: 60%, 35%, contain;
+        width: 1000px;
+        height: 660px;
+        background-image: url(./img/Group\ 1521.png), url(./img/Group\ 1520.png), url(./img/Group\ 1516.png);
+        background-position: -50px 0, 80% 10%, 0% 90%;
+        background-repeat: no-repeat;
+    }
+    .process-section .ad-slogan{
+        max-width: 500px;
+        margin-right: 0;
+        font-size: 50px;
+        color: #2FAFAE;
+        font-weight: bold;
+        position: relative;
+        top: 300px;
+        left: 50%;
+    }
+    .process-section .ad-text{
+        max-width: 500px;
+        font-size: 20px;
+        color: white;
+        text-shadow: 0px 3px 3px #47270680;
+        font-weight: bold;
+        position: relative;
+        top: 380px;
+        left: 50%;
+    }
+    .process-section article p
+    .process-section article ol li {
+        font-size: 20px;
+    }
+    .process-section footer p {
+        font-size: 15px;
+    }
 }
